@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow: hidden;
+}
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    background-color: #1f1f1f;
+    color: #fff;
+}
+
+.top_pokedex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    gap: 20px;
+    padding: 20px;
+}
+
+.top_pokedex div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.top_pokedex img {
+    width: 25px;
+    border-radius: 80px;
+}
+
+.top_pokedex h1 {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.top_pokedex p {
+    font-weight: 300;
+    opacity: 0.5;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: red;
+}
+
+
+
+/* search area */
+
+.search_area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 10px;
+}
+
+.search_area div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.search_area div label {
+    font-size: 16px;
+    opacity: 0.5;
+}
+
+#id_pokemon {
+    font-family: 'Hanken Grotesk', sans-serif;
+    padding: 5px 10px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(196, 196, 196, 0.3);
+}
+
+#search_btn {
+    padding: 5px 15px;
+    border: none;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 15px;
+    transition: 0.2s;
+
+    background-color: red;
+    color: #fff;
+}
+
+#search_btn:hover {
+    background-color: rgb(85, 0, 0);
+}

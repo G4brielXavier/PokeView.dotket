@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" href="https://e7.pngegg.com/pngimages/1014/126/png-clipart-pokeball-illustration-pokemon-go-pokeball-trademark-logo.png" type="image/x-icon">
+    <title>PokeView</title>
+
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="./assets/css/view_styles.css">
+    <link rel="stylesheet" href="./assets/css/types_styles.css">
+
+</head>
+<body>
+    
+
+    <header class="top_pokedex">
+        <div>
+            <img src="https://e7.pngegg.com/pngimages/1014/126/png-clipart-pokeball-illustration-pokemon-go-pokeball-trademark-logo.png" alt="icon_pokedex">
+            <h1>Pokemon.dotket</h1>
+        </div>
+        <p>powered by <a href="https://pokeapi.co/">PokeApi</a></p>
+    </header>
+
+    <section class="search_area">
+        <div>
+            <label for="pokemon_name">Pokemon Name:</label>
+            <input type="text" name="id_pokemon" id="id_pokemon" placeholder="Try type 'bulbasaur' here">
+        </div>
+        <button id="search_btn" type="submit">Search</button>
+    </section>
+
+    <section class="content_principal">
+        <div class="photo_pokemon_view">
+            <img src="" alt="preview_pokemon" id="view_photo">
+        </div>
+        <div class="info_pokemon">
+            <header>
+                <h1 id="name_pokemon">pokemon_name</h1>
+                <div>
+                    <ol class="types">
+                        <li class="type -grass">grass</li>
+                        <li class="type -grass">grass</li>
+                    </ol>
+                    <span id="index_pokemon">#0000</span>
+                </div>
+            </header>
+            <ol class="detail_pokemon">
+                <li id="info">
+                    <p>Species</p>
+                    <p>undefined</p>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+
+    <script src="./assets/js/fetch_api.js"></script>
+    <script src="./assets/js/controller.js"></script>
+</body>
+</html>
